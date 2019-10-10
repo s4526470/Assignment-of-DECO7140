@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pandas' Friends</title>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/Friends.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <div id="blank-box"></div>
+
+        <div id="popImage01">
+            <div class="close">
+                <a href="javascript:void(0)" onclick="closeImage01()">close</a>
+            </div>
+            
+            <img class="content" src="images/red-panda2.jpg" alt="red-panda">
+        </div>
+
+        <div id="popImage02">
+            <div class="close">
+                <a href="javascript:void(0)" onclick="closeImage02()">close</a>
+            </div>
+            
+            <img class="content" src="images/red-panda3.jpg" alt="red-panda">
+        </div>
+        
+        <div id="popImage03">
+            <div class="close">
+                <a href="javascript:void(0)" onclick="closeImage03()">close</a>
+            </div>
+            
+            <img class="content" src="images/red-panda4.jpg" alt="red-panda">
+        </div>
+
+        <div id="popImage04">
+            <div class="close">
+                <a href="javascript:void(0)" onclick="closeImage04()">close</a>
+            </div>
+            
+            <img class="content" src="images/red-panda5.jpg" alt="red-panda">
+        </div>
+           
+
+        <div id="navdis">
+            <input id="navdisplay" type="button" value="">
+        </div>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="story-page.html">STORY</a>
+                </li>
+                <li>
+                    <a href="giant-panda-page.html">GIANT PANDA</a>
+                </li>
+                <li>
+                    <a href="Bing-Bing-page.html">PANDA "BING-BING"</a>
+                </li>
+                <li>
+                    <a href="Friends.html">PANDA'S FRIEND</a>
+                </li>
+                <li>
+                    <a href="About-page.html">ABOUT</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="main-content">
+            <figure id="side-figure">
+                <img src="images/red-panda1.jpg" alt="red-panda">
+            </figure>
+            
+            <figure id="top-figure">
+                <img src="images/red-panda2.jpg" onclick="popImage01();" alt="red-panda">
+                <img src="images/red-panda3.jpg" onclick="popImage02();" alt="red-panda">
+                <img src="images/red-panda4.jpg" onclick="popImage03();" alt="red-panda">
+                <img src="images/red-panda5.jpg" onclick="popImage04();" alt="red-panda">
+            </figure>
+
+            <article id="text-field">
+                <h2>Red panda</h2>
+                <p>Red panda is good friend with giant panda, because they have same favorite food, bamboo! 
+                    They mainly live in the southwestern of China, and they also are endangered animals like giant pandas.</p>
+                <h2>Amount</h2>
+                <p>According to the survey, due to illegal hunting and worse environment, the total number of wild adult red pandas are less than 10000. 
+                    Therefore, it is very important for government to protect the red pandas.</p>
+                <h2>Feature</h2>
+                <p>The feature of red pandas is totally different from giant pandas. Comparing to the giant pandas, 
+                    red pandas have longer tail (28 – 59 cm) and smaller body (50 – 64 cm). Besides, they have red soft fur and more flexible movement.</p>
+                <a href="index.html">Ending the trip</a>
+            </article>
+            
+        </section>
+        <script src="js/friend-page.js"></script>
+    </body>
+    
+</html>

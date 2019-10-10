@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Story</title>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/story-page.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <audio id="audio01" src="audio/clap-sound.mp3"></audio>
+        <audio id="audio02" src="audio/boo-sound.mp3"></audio>
+        <div id="blank-box"></div>
+        <div id="pop-wrong-messagebox">
+            <div class="content1">
+                <p>Your are wrong!</p>
+                <a href="javascript:void(0)" onclick="closeWrongMassageBox()">Try again</a>
+            </div>
+        </div>
+
+        <div id="pop-correct-messagebox">
+            <div class="content2">
+                <p>Congratulation, Your are Right! ^_^</p>
+                <a href="javascript:void(0)" onclick="closeCorrectMassageBox()">Cancel</a>
+            </div>
+        </div>
+
+
+        <div id="navdis">
+            <input id="navdisplay" type="button" value="">
+        </div>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="story-page.html">STORY</a>
+                </li>
+                <li>
+                    <a href="giant-panda-page.html">GIANT PANDA</a>
+                </li>
+                <li>
+                    <a href="Bing-Bing-page.html">PANDA "BING-BING"</a>
+                </li>
+                <li>
+                    <a href="Friends.html">PANDA'S FRIEND</a>
+                </li>
+                <li>
+                    <a href="About-page.html">ABOUT</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="main-content">
+            <figure id="story-image">
+                <img src="images/story-image.png" alt="book-image" >
+            </figure>
+            <article id="content">
+                <a href="https://www.goodreads.com/book/show/13136252-a-perfect-time-for-pandas" target="_blank">
+                    <h2>A PERFECT TIME FOR PANDAS</h2>
+                </a>
+                <p id="show-pid1"></p>
+                <p id="pid1" style="display:none">After Annie and Jack entered in the tree house, the house started to spin and spun faster and faster. 
+                    Five minutes late,  they were brought to the WoollongTown Giant Panda Reserve, SiChuan Province, China. 
+                    They met a new friend, Dr Ling, who was a tour guide and scholar of Giant Panda Center ,and understood much knowledge of giant panda. 
+                    Most amazingly, they made friend with giant panda, Bing-Bing, and saved her life during serious earthquake. <br />
+                    <br />
+                    Now, let’s pack up our baggage, follow with the Annie and Jack, and realized the giant panda!
+                    
+                </p>
+                <nav id="button">
+                        <a href="giant-panda-page.html">Let's Go</a>
+                </nav>
+            </article>
+        </section>
+        <section id="question-area">
+            <figure id="panda">
+                <img src="images/cute-panda.png" alt="cute-panda" id="panda1">
+            </figure>
+            <div id="question">
+                <img src="images/question.png" alt="question">
+                <p id="description">Do you know how many pandas still exist in the world?</p>
+                <ul id="answer">
+                    <li><a href="#" id="a1">500 ~ 600</a></li>
+                    <li><a href="#" id="a2">4000 ~ 5000</a></li>
+                    <li><a href="#" id="a3">2000 ~ 2500</a></li>
+                    <li><a href="giant-panda-page.html">Ask for Annie and Jack</a></li>
+                </ul>
+            </div>
+        </section>
+        <script src="js/story-page.js"></script>
+    </body>
+    
+    
+    
+</html>

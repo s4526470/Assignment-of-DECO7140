@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+    text-align: center;
+    background-image: url(../images/tree-house-01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Josefin Sans', sans-serif;
+	
+}
+
+
+/* animation01 */
+.bird img {
+    max-width: 220px;
+	position: absolute;
+	bottom: 0;
+	left: -300px;
+	animation-timing-function: linear;
+	animation-name: birds;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+
+.bird img:nth-child(1) {
+    max-width: 300px;
+	top: 120px;
+	animation-duration: 20s;
+}
+
+@keyframes birds {
+	0% {
+		left: -280px;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+/* animation02 */
+#door li {
+    text-align: center;
+    list-style: none;
+    position: absolute;
+	
+}
+
+#door a {
+    
+	display: block;
+	color:pink;
+	text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25em;
+    
+}
+
+@keyframes dooranimation {
+	0% {
+		transform: scale(1);
+	}
+	20% {
+		transform: scale(2);
+	}
+	40%, 100% {
+		transform: scale(1);
+	}
+}
+
+#door li.lock {
+    
+    
+	width: 15px;
+	height: 15px;
+    border: 3px solid #FFD700;
+    box-shadow: 0 0 15px 2px white;
+	background: white;
+	border-radius: 100%;
+	z-index: 1;
+	animation-name: dooranimation;
+	animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    margin-top: 35%;
+    margin-left: 48%;
+}
+
+#door li.lock a {
+	padding-left: 30px;
+	line-height: 20px;
+	white-space: nowrap;
+	visibility: hidden;
+	opacity: 0;
+	transition: 1s ease;
+}
+
+#door li.lock:hover a {
+	visibility: visible;
+	opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+

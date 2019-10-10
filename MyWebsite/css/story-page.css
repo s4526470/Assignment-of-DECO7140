@@ -1,0 +1,243 @@
+/* background layer */
+#blank-box {
+    display: none;
+    background-color:white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    -moz-opacity: 0.8;
+    opacity:0.2;
+    
+}
+/* pop layer */
+#pop-wrong-messagebox, #pop-correct-messagebox{
+    display: none;
+    z-index: 21;
+    position: absolute;
+    margin-top: 45%;
+    margin-left:50%;
+    background-color: aliceblue;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    
+}
+.content1{
+    padding: 1.25em;
+    
+}
+
+.content1 p{
+    color: palevioletred;
+}
+
+.content1 a {
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    left: 4em;
+    background-color: lightpink;
+    color: purple;
+    padding: 0.25em;
+    border-radius: 5px;
+}
+
+.content2{
+    padding: 1.25em;
+    
+}
+
+.content2 p{
+    color: #99CC33;
+}
+
+.content2 a {
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    left: 4.25em;
+    background-color: lightpink;
+    color: purple;
+    padding: 0.25em;
+    border-radius: 5px;
+}
+
+
+
+
+/* main content */
+#main-content{
+    margin-top: 3em;
+    padding: auto 2em;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#main-content #story-image img{
+     max-width: 500px;
+     max-height: 500px;
+     margin: 1em 2em;
+    
+}
+
+#main-content #content{
+    margin-right: 1em;
+    padding: 1.25em 1.25em 1.25em 1.25em;
+    border-style: solid;
+    border-color: lightpink;
+    text-align: start;
+    line-height: 1.6em;
+    border-radius: 10px;
+    border-width: 1.5px;
+    min-height: 460px;
+    width: 600px;
+    
+    
+}
+
+#main-content #content a{
+    text-decoration: none;
+    
+}
+
+#main-content #content h2{
+    color: black;
+    text-align: center;
+    padding-top: 0.75em;
+    padding-bottom: 0.5em;
+    margin-left: 3em;
+    margin-right: 3em;
+    
+    
+}
+
+#main-content #content #show-pid1 {
+    padding-top: 2em;
+    font-size: 1.5em;
+    word-wrap: break-word;
+    max-width: 600px;
+    min-height: 460px;
+
+}
+
+#main-content #content #show-pid1:first-of-type:first-letter{
+    float: left;
+	font-size: 3em;
+	color: lightsalmon;
+	margin-top: -0.3em;
+	margin-right: 0.1em;
+}
+
+#content #button {
+    
+    background-color: lightpink;
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-top: -8.5em;
+    margin-left: 69%;
+    animation-timing-function: linear;
+    opacity: 1;
+    animation-name: button-pop-up;
+    animation-duration: 25s;
+   
+
+ }
+
+ @keyFrames button-pop-up{
+    0% {
+		opacity: 0;
+	}
+	
+	80% {
+		opacity: 0;
+    }
+    100%{
+        opacity: 1.0;
+    }
+ }
+ 
+#content #button a{
+     font-weight: bold;
+ }
+
+
+/* question zone */
+#question-area{
+    margin: 2em auto;
+}
+#question-area #panda{
+    padding: 0.75em;
+    position: absolute;
+    padding-left: 8%;
+    
+}
+
+#question-area #panda img{
+    max-width: 200px;
+    animation-timing-function: linear;
+    animation-name: panda-pop-up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+#question-area #panda img:hover{
+    max-width: 230px;
+    border-style:solid;
+    border-radius: 100%;
+    border-width: 2px;
+    border-color: gold;
+    box-shadow: 0 0 15px 2px palevioletred;
+}
+
+@keyframes panda-pop-up {
+	0% {
+		transform: scale(1);
+	}
+	20% {
+		transform: scale(1.2);
+	}
+	40%, 100% {
+		transform: scale(1);
+	}
+}
+
+#question-area #question{
+    line-height: 1.25em;
+    color:palevioletred;
+}
+
+#question-area #question img{
+    max-width: 50px;
+}
+
+#question-area #question #description{
+    font-size: 2em;
+    margin-bottom: 1.0em;
+}
+
+#question-area #question #answer{
+    padding: 0.75em auto;
+    text-align: left;
+    margin-left: 28%;
+    color:palevioletred;
+}
+#question-area #question #answer li{
+    padding: 0.25em;
+    font-size: 1.25em;
+    background-size: 1.5em;
+}
+#question-area #question #answer a{
+    color:palevioletred;
+    text-decoration: none;
+}
+
+
+
+

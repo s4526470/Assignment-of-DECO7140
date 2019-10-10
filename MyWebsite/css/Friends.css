@@ -1,0 +1,176 @@
+/* background layer */
+#blank-box {
+    display: none;
+    background-color:white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    -moz-opacity: 0.8;
+    opacity:0.3;
+    
+}
+
+/* pop layer */
+#popImage01, #popImage02, #popImage03, #popImage04{
+    display: none;
+    z-index: 21;
+    position:fixed;
+    top:100px;
+    left:350px;
+    
+}
+.content{
+    border-radius: 10px;
+    max-width: 1000px;
+}
+.close{
+    text-align: left;
+    margin-left: 5px;
+    background-color: #F8F8F8;
+}
+
+.close a {
+    text-decoration: none;
+    color: purple;
+    font-size: 1.5em;
+}
+
+
+/* Main content */
+#main-content {
+    border-style: solid;
+    border-color: gray;
+    width: 1200px;
+    position: absolute;
+    top: 130px;
+    margin-left: 13%;
+    padding: 1.5em;
+    border-radius: 10px;
+    border-width: 1.5px;
+}
+
+#main-content #side-figure img{
+
+    max-height: 500px;
+    border-radius: 5px;
+    float: left;
+}
+
+#main-content #top-figure img{
+    
+    max-width: 130px;
+    border-radius: 5px;
+    float: top;
+}
+
+#main-content #top-figure img:nth-child(1){
+    position: absolute;
+    left: 36%;
+    animation-timing-function: linear;
+	animation-name: topimage1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+/* animation1 */
+@keyframes topimage1 {
+	0% {
+		left: 36%;
+	}
+	100% {
+		left: 80%;
+	}
+}
+
+#main-content #top-figure img:nth-child(2){
+    position: absolute;
+    left: 36%;
+    animation-timing-function: linear;
+	animation-name: topimage2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+/* animation2 */
+@keyframes topimage2 {
+	0% {
+		left: 36%;
+	}
+	100% {
+		left: 80%;
+	}
+}
+
+#main-content #top-figure img:nth-child(3){
+    position: absolute;
+    left: 36%;
+    animation-timing-function: linear;
+	animation-name: topimage3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+
+/* animation3 */
+@keyframes topimage3 {
+	0% {
+		left: 36%;
+	}
+	100% {
+		left: 80%;
+	}
+}
+
+#main-content #top-figure img:nth-child(4){
+    position: absolute;
+    left: 36%;
+    animation-timing-function: linear;
+	animation-name: topimage4;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 6s;
+}
+
+/* animation4 */
+@keyframes topimage4 {
+	0% {
+		left: 36%;
+	}
+	100% {
+		left: 80%;
+	}
+}
+
+#main-content #text-field{
+    
+    margin-top: 7em;
+    line-height: 1.25em;
+    margin-left: 30%;
+    
+    
+}
+
+#main-content #text-field h2{
+   text-align: left;
+   font-size: 1.75em;
+   margin-bottom: 0.5em;
+}
+
+#main-content #text-field p{
+    text-align: left;
+    font-size: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+#main-content #text-field a{
+    background-color: lightpink;
+    border-radius: 10px;
+    padding: 5px 8px;
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+}

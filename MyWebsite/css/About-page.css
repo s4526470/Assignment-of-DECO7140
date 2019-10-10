@@ -1,0 +1,31 @@
+#reference{
+    border-style: solid;
+    border-color: gray;
+    width: 900px;
+    position: absolute;
+    top: 110px;
+    margin-left: 21.5%;
+    padding: 1.5em;
+    border-radius: 10px;
+    border-width: 1.5px;
+    text-align: left;
+   
+    
+}
+
+#reference h2{
+    
+    font-size: 1.75em;
+    margin-bottom: 1.25em;
+}
+
+#reference p {
+    margin-top: 1.3em;
+    font-size: 1.25em;
+}
+#reference a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: lightcoral;
+   
+}
